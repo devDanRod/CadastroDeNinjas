@@ -15,6 +15,8 @@ public class NinjaModel {
     private long id;
     private String nome;
     private int idade;
+
+    @Column(unique = true)
     private String email;
 
     @ManyToOne
